@@ -12,9 +12,9 @@ RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/co
       gfortran \
       musl
 
+COPY numpy-site.cfg /root/.numpy-site.cfg
 RUN ln -sv /usr/include/locale.h /usr/include/xlocale.h && \
   pip install --no-cache-dir Cython --install-option="--no-cython-compile" && \
   pip install --no-cache-dir numpy=="$NUMPY_VERSION" pandas=="$PANDAS_VERSION" && \
   python -c 'import numpy, pandas; print("NUMPY VERSION: ", numpy.__version__, "\nPANDAS VERSION: ", pandas.__version__)'
 
-RUN apk del build-dependencies
