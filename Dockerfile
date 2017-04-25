@@ -1,7 +1,7 @@
-FROM quay.io/vektorcloud/python3:latest
+FROM quay.io/vektorcloud/python:3
 
-ENV NUMPY_VERSION 1.11.2
-ENV PANDAS_VERSION 0.19.0
+ENV NUMPY_VERSION 1.12.1
+ENV PANDAS_VERSION 0.19.2
 
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community \
       openblas \
