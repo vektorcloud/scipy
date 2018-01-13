@@ -1,6 +1,9 @@
 # scipy
 
-[![Circle CI](https://circleci.com/gh/vektorcloud/scipy.svg?style=svg)](https://circleci.com/gh/vektorcloud/scipy)
+![circleci][circleci]
+
 
 Tiny Alpine image for running Scipy
 
+
+[circleci]: https://img.shields.io/circleci/project/github/vektorcloud/scipy.svg "scipy"
