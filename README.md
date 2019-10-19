@@ -1,6 +1,6 @@
 # scipy
 
-![circleci][circleci]
+[![circleci][circleci]](https://circleci.com/gh/vektorcloud/scipy)
 
 
 Tiny Alpine image for running Scipy
